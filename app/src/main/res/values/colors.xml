@@ -1,0 +1,13 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#F0F0F0</color> <!-- Fondo claro -->
+    <color name="textColorPrimary">#212121</color> <!-- Texto principal oscuro -->
+    <color name="hintColor">#9E9E9E</color> <!-- Color del hint en los campos de texto -->
+    <color name="buttonColor">#6200EE</color> <!-- Color del botón -->
+    <color name="buttonColorDark">#3700B3</color> <!-- Color del botón al presionarlo -->
+    <color name="textColorButton">#FFFFFF</color> <!-- Color del texto en los botones -->
+    <color name="linkColor">#03A9F4</color> <!-- Color de los links -->
+    <color name="hintColorNew">#BDBDBD</color> <!-- Color de texto de sugerencia -->
+    <color name="linkColorNew">#1E88E5</color> <!-- Color para enlaces -->
+</resources>

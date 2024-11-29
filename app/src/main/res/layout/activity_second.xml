@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".SecondActivity">
+
+    <!-- Texto de bienvenida principal -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido de nuevo, soldado!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center" />
+
+    <!-- Imagen centrada con margen para mejor distribución -->
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="400dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Imagen de bienvenida"
+        android:src="@drawable/imagen"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <!-- Frase icónica debajo de la imagen -->
+    <TextView
+        android:id="@+id/tvIconicPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Frosty."
+        android:textSize="22sp"
+        android:textColor="@color/hintColorNew"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/ivImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Texto adicional debajo de la frase -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuerda, el enemigo nunca duerme."
+        android:textSize="18sp"
+        android:textColor="@color/hintColorNew"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toBottomOf="@id/tvIconicPhrase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- Botón de Cerrar Sesión -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:textColor="@color/textColorButton"
+        android:background="@drawable/button_background"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Texto adicional debajo del botón -->
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gracias por tu servicio. ¡Vuelve pronto!"
+        android:textSize="14sp"
+        android:textColor="@color/linkColorNew"
+        app:layout_constraintTop_toBottomOf="@id/btnLogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
